@@ -1,4 +1,4 @@
-package workingWithSelenium.steps.steps;
+package workingWithSelenium.steps;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

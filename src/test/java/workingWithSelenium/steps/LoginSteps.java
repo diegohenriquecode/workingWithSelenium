@@ -1,4 +1,4 @@
-package workingWithSelenium.steps.steps;
+package workingWithSelenium.steps;
 
 import java.util.Map;
 

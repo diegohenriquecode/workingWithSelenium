@@ -1,0 +1,125 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-21T23:50:15.952Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "workingWithSelenium.steps.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Login com sucesso no Orange HRM",
+        "description": "",
+        "id": "login;login-com-sucesso-no-orange-hrm",
+        "after": [
+          {
+            "result": {
+              "duration": 188000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "workingWithSelenium.steps.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8952000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que o usuario esteja na pagina de login",
+            "match": {
+              "location": "workingWithSelenium.steps.LoginSteps.queOUsuarioEstejaNaPaginaDeLogin()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 4019000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "o usuario inputar as credenciais na pagina",
+            "match": {
+              "location": "workingWithSelenium.steps.LoginSteps.oUsuarioInputarAsCredenciaisNaPAgina(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "user",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ]
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//tbody/tr[1]/td[3]/div[1]/a[1]/img[1]\"}\n  (Session info: chrome\u003d90.0.4430.72)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Ultron\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.8.0-50-generic\u0027, java.version: \u00271.8.0_282\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.Iec4gc}, goog:chromeOptions: {debuggerAddress: localhost:39623}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ce6138fb2e51d47c11c2e785d8195574\n*** Element info: {Using\u003dxpath, value\u003d//tbody/tr[1]/td[3]/div[1]/a[1]/img[1]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat workingWithSelenium.pagepbjects.HomePage.successHomePageRedirect(HomePage.java:15)\n\tat workingWithSelenium.steps.LoginSteps.oUsuarioDeveAcessarAPaginaInicialDoOrangeHRM(LoginSteps.java:31)\n\tat ✽.o usuario deve acessar a pagina inicial do Orange HRM(file:///home/ultron/Groove.Tech/talent-training-workspace/workingWithSelenium/./src/test/resources/features/Login.feature:14)\n",
+              "duration": 10041000000,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "o usuario deve acessar a pagina inicial do Orange HRM",
+            "match": {
+              "location": "workingWithSelenium.steps.LoginSteps.oUsuarioDeveAcessarAPaginaInicialDoOrangeHRM()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@OrangeHRM"
+          },
+          {
+            "name": "@LoginSucesso"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      },
+      {
+        "name": "@OrangeHRM",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

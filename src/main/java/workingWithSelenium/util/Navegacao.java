@@ -16,8 +16,8 @@ public class Navegacao {
 		if (driver == null) {
 			System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
 			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 		}
 		return driver;
