@@ -1,5 +1,6 @@
-package workingWithSelenium.pagepbjects;
+package workingWithSelenium.pageobjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
@@ -7,6 +8,7 @@ public class LoginPage extends BasePage {
 	private String userNameField = "//input[@id='txtUsername']";
 	private String passwordField = "#txtPassword";
 	private String loginButton = "btnLogin";
+	private By invalidCredential = By.id("spanMessage");
 
 	public WebElement getNameField() {
 		return getElementByXpath(userNameField);
@@ -29,6 +31,10 @@ public class LoginPage extends BasePage {
 	public void toLoginPage() {
 		driver.navigate().
 		to("https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUser");
+	}
+	
+	public void getInavlidCredentialsMessage() {
+		driver.findElement(invalidCredential).isDisplayed();
 	}
 
 }

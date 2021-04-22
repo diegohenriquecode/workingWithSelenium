@@ -6,8 +6,8 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
-import workingWithSelenium.pagepbjects.HomePage;
-import workingWithSelenium.pagepbjects.LoginPage;
+import workingWithSelenium.pageobjects.HomePage;
+import workingWithSelenium.pageobjects.LoginPage;
 
 public class LoginSteps {
 
@@ -34,7 +34,7 @@ public class LoginSteps {
 
 	@Entao("o usuario deve permanecer na pagina de login")
 	public void oUsuarioDevePermanecerNaPaginaDeLogin() {
-		loginPage.getLoginButton().isDisplayed();
+		loginPage.getInavlidCredentialsMessage();
 	}
 
 }

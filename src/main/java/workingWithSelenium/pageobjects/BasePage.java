@@ -1,4 +1,4 @@
-package workingWithSelenium.pagepbjects;
+package workingWithSelenium.pageobjects;
 import workingWithSelenium.util.Navegacao;
 
 import org.openqa.selenium.By;

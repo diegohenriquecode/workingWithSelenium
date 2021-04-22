@@ -3,8 +3,8 @@ package workingWithSelenium.steps;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
-import workingWithSelenium.pagepbjects.HomePage;
-import workingWithSelenium.pagepbjects.NacionalitiePage;
+import workingWithSelenium.pageobjects.HomePage;
+import workingWithSelenium.pageobjects.NacionalitiePage;
 
 public class NacionalitiesSteps {
 	HomePage homePage = new HomePage();

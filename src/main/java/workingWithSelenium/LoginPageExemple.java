@@ -1,6 +1,6 @@
 package workingWithSelenium;
 
-import workingWithSelenium.pagepbjects.LoginPage;
+import workingWithSelenium.pageobjects.LoginPage;
 
 public class LoginPageExemple {
 	public static void main(String[] args) {
