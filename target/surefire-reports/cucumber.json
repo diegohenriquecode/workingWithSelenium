@@ -3,18 +3,42 @@
     "line": 6,
     "elements": [
       {
-        "line": 8,
-        "name": "",
+        "start_timestamp": "2021-04-22T18:55:03.288Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "workingWithSelenium.steps.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login invalido no Orange HRM",
         "description": "",
-        "type": "background",
-        "keyword": "Contexto",
+        "id": "login;login-invalido-no-orange-hrm",
+        "after": [
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "workingWithSelenium.steps.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
         "steps": [
           {
             "result": {
-              "duration": 3520000000,
+              "duration": 3792000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 18,
             "name": "que o usuario esteja na pagina de login",
             "match": {
               "location": "workingWithSelenium.steps.LoginSteps.queOUsuarioEstejaNaPaginaDeLogin()"
@@ -23,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 2615000000,
+              "duration": 641000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 19,
             "name": "o usuario inputar as credenciais na pagina",
             "match": {
               "location": "workingWithSelenium.steps.LoginSteps.oUsuarioInputarAsCredenciaisNaPAgina(io.cucumber.datatable.DataTable)"
@@ -40,128 +64,47 @@
               },
               {
                 "cells": [
-                  "Admin",
-                  "admin123"
+                  "Admina",
+                  "admina123"
                 ]
               }
             ],
-            "keyword": "E "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-04-22T17:01:46.858Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "workingWithSelenium.steps.Hooks.beforeScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Cadastrar Nacionalidade",
-        "description": "",
-        "id": "nacionalities;cadastrar-nacionalidade",
-        "after": [
-          {
-            "result": {
-              "duration": 137000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "workingWithSelenium.steps.Hooks.afterScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2124000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "que o usuario esteja na pagina Nacionalities",
-            "match": {
-              "location": "workingWithSelenium.steps.NacionalitiesSteps.queOUsuarioEstejaNaPaginaNacionalities()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 10073000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "a nacionalitie \"Brasileira\" nao exista",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Brasileira\"",
-                  "offset": 15
-                }
-              ],
-              "location": "workingWithSelenium.steps.NacionalitiesSteps.aNacionalitieNaoExista(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 1362000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "adicionar a nacionalitie \"Brasileira\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Brasileira",
-                  "offset": 26
-                }
-              ],
-              "location": "workingWithSelenium.steps.NacionalitiesSteps.adicionarANacionalitie(java.lang.String)"
-            },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 81000000,
+              "duration": 98000000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "a nacionalidade sera exibida na lista",
+            "line": 22,
+            "name": "o usuario deve permanecer na pagina de login",
             "match": {
-              "location": "workingWithSelenium.steps.NacionalitiesSteps.aNacionalidadeSeraExibidaNaLista()"
+              "location": "workingWithSelenium.steps.LoginSteps.oUsuarioDevePermanecerNaPaginaDeLogin()"
             },
             "keyword": "Entao "
           }
         ],
         "tags": [
           {
-            "name": "@Nacionalities"
+            "name": "@Login"
           },
           {
-            "name": "@Regressivo"
+            "name": "@OrangeHRM"
           },
           {
-            "name": "@IncluirNacionalidade"
+            "name": "@InvalidLogin"
           }
         ]
       }
     ],
-    "name": "Nacionalities",
+    "name": "Login",
     "description": "",
-    "id": "nacionalities",
+    "id": "login",
     "keyword": "Funcionalidade",
-    "uri": "file:src/test/resources/features/Nacionalities.feature",
+    "uri": "file:src/test/resources/features/Login.feature",
     "tags": [
       {
-        "name": "@Nacionalities",
+        "name": "@Login",
         "type": "Tag",
         "location": {
           "line": 5,
@@ -169,11 +112,11 @@
         }
       },
       {
-        "name": "@Regressivo",
+        "name": "@OrangeHRM",
         "type": "Tag",
         "location": {
           "line": 5,
-          "column": 16
+          "column": 8
         }
       }
     ]
