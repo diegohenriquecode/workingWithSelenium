@@ -28,7 +28,7 @@ public class LoginPage extends BasePage {
 
 	public void toLoginPage() {
 		driver.navigate().
-		to("https://opensource-demo.orangehrmlive.com/index.php/admin/saveSystemUser");
+		to("https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUser");
 	}
 
 }

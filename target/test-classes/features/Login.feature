@@ -1,6 +1,6 @@
 #language: pt
 #Version: 1.0
-#Author: Adilson Ferreira
+#Author: Diego Henrique
 #Encoding: UTF-8
 @Login @OrangeHRM
 Funcionalidade: Login

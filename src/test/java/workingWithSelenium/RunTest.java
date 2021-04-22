@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		"json:target/surefire-reports/cucumber.json" }, 
         glue = "workingWithSelenium.steps", 
         features = {".//src//test//resources//features//" }, 
-        tags = "@LoginSucesso" , stepNotifications = true, 
+        tags = "@IncluirNacionalidade" , stepNotifications = true, 
         dryRun = false)
 public class RunTest {
 }
