@@ -34,7 +34,7 @@ public class LoginSteps {
 
 	@Entao("o usuario deve permanecer na pagina de login")
 	public void oUsuarioDevePermanecerNaPaginaDeLogin() {
-		loginPage.getInavlidCredentialsMessage();
+		loginPage.checkInvalidCredentialsMessage();
 	}
 
 }

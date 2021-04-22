@@ -41,4 +41,13 @@ public class NacionalitiePage extends BasePage {
 		}
 		Assert.assertFalse("Nacionalitie [ " + nacio + " ] já cadastrada", existe);
 	}
+	
+	public Boolean getNationalityAlreadyExistd(String nationality) {
+		nationality = this.opcaoNaLista;
+		return getElementByXpath(nationality).isDisplayed();
+	}
+	
+	public void deleteNationality() {
+		
+	}
 }

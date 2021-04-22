@@ -17,13 +17,15 @@ Funcionalidade: Nacionalities
     E a nacionalitie "Brasileira" nao exista
     Quando adicionar a nacionalitie "Brasileira"
     Entao a nacionalidade sera exibida na lista
-#
-  #Cenario: Cadastrar Nacionalidade já cadastrada
-    #Dado que o usuario esteja na pagina Nacionalities
-    #Quando adicionar a nacionalitie "Brasileira"
-    #Entao exibira a mensagem para a nacionalitie "Already exists"
-#
-  #Cenario: Excluir Nacionalitie
-    #Dado que o usuario esteja na pagina Nacionalities
-    #E a nacionalitie "Brasileira" nao exista
-    #Entao exibira a mensagem para a nacionalitie "Already exists"
+
+	@CadastrarNacionalidadeJaExistente
+  Cenario: Cadastrar Nacionalidade já cadastrada
+    Dado que o usuario esteja na pagina Nacionalities
+    Quando adicionar a nacionalitie "Brasileira"
+    Entao exibir a mensagem para a nacionalitie "Already exists"
+
+	@DeletarNacionalidade
+	Cenario: Excluir Nacionalitie
+    Dado que o usuario esteja na pagina Nacionalities
+    E a nacionalitie "Brasileira" nao exista
+    Entao exibira a mensagem para a nacionalitie "Already exists"

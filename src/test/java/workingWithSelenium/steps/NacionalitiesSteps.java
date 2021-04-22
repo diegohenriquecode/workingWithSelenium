@@ -15,7 +15,12 @@ public class NacionalitiesSteps {
 		homePage.acessAdminMenu();
 		nacionalitiesPage.acessaOpcaoMenuNacionalities();
 	}
-
+	
+	@Dado("a nacionalitie {string} nao exista")
+	public void aNacionalitieNaoExista(String nacionalidade) {
+		nacionalitiesPage.validaNacionalidadeNaoExistenteNaLista(nacionalidade);
+	}
+	
 	@Quando("^adicionar a nacionalitie \"([^\"]*)\"$")
 	public void adicionarANacionalitie(String nacionalitie) throws Throwable {
 		nacionalitiesPage.cadastraNacionalitie(nacionalitie);
@@ -25,10 +30,10 @@ public class NacionalitiesSteps {
 	public void aNacionalidadeSeraExibidaNaLista() throws Throwable {
 		nacionalitiesPage.verificaNacionalidadeCadastrada();
 	}
-
-	@Dado("a nacionalitie {string} nao exista")
-	public void aNacionalitieNaoExista(String nacionalidade) {
-		nacionalitiesPage.validaNacionalidadeNaoExistenteNaLista(nacionalidade);
+	
+	@Entao("exibir a mensagem para a nacionalitie {string}")
+	public void exibirAMensagemParaANacionalitie(String nationality) {
+	   nacionalitiesPage.getNationalityAlreadyExistd(nationality);
 	}
 }
 
