@@ -1,4 +1,4 @@
-package workingWithSelenium.pagepbjects;
+package workingWithSelenium.pageobjects;
 
 import org.junit.Assert;
 
@@ -40,5 +40,14 @@ public class NacionalitiePage extends BasePage {
 			existe = false;
 		}
 		Assert.assertFalse("Nacionalitie [ " + nacio + " ] já cadastrada", existe);
+	}
+	
+	public Boolean getNationalityAlreadyExistd(String nationality) {
+		nationality = this.opcaoNaLista;
+		return getElementByXpath(nationality).isDisplayed();
+	}
+	
+	public void deleteNationality() {
+		
 	}
 }

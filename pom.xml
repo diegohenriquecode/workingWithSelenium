@@ -48,6 +48,30 @@
 			<version>6.10.3</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.3.3</version>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured-all</artifactId>
+			<version>4.3.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>2.4.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+
 	</dependencies>
 
 </project>

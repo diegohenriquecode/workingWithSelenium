@@ -1,7 +1,7 @@
 package workingWithSelenium;
 
-import workingWithSelenium.pagepbjects.LoginPage;
-import workingWithSelenium.pagepbjects.UsersPanelPage;
+import workingWithSelenium.pageobjects.LoginPage;
+import workingWithSelenium.pageobjects.UsersPanelPage;
 
 public class UsersPanelPageExample {
 

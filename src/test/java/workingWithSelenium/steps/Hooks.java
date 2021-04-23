@@ -18,4 +18,5 @@ public class Hooks {
 		System.out.println("Finalizando a execução do Teste: " + scenario.getName());
 		Navegacao.quitDriver();
 	}
+	
 }
